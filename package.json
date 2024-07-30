@@ -1,0 +1,12 @@
+{
+  "name": "zookeeper-mini",
+  "version": "1.0.0",
+  "description": "In this mini-project, you will work with a group to complete the Zoo Animal and Employee Tracking app by filling in the missing classes while using TypeScript to build a robust fault-tolerant application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
