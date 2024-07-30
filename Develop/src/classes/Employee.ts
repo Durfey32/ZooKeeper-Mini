@@ -1,4 +1,6 @@
-class ZooKeeper implements Work {
+import Work from '../interfaces/Work.js'
+
+class Employee implements Work {
     name: string;
     id: number;
     title: string;
@@ -20,5 +22,5 @@ class ZooKeeper implements Work {
       return pay;
     }
   }
-  export default ZooKeeper;
+  export default Employee;
   

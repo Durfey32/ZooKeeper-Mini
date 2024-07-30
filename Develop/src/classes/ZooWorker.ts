@@ -1,5 +1,7 @@
 // TODO: Have the ZooWorker class inherit Employee properties
-class ZooWorker {
+import Employee from "./Employee";
+
+class ZooWorker extends Employee {
   constructor(
     name: string,
     id: number,
@@ -7,6 +9,7 @@ class ZooWorker {
     salary: number,
     private cleanUniform: boolean
   ) {
+    super(name, id, title, salary);
     this.cleanUniform = cleanUniform;
   }
 
