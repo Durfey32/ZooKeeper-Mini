@@ -32,7 +32,7 @@ class Cli {
           ],
         },
       ])
-      .then((res) => {
+      .then((res: { action: any; }) => {
         //switch statement for the different options on inquirer.
         switch (res.action) {
           case 'Add Animals to Zoo':
@@ -74,7 +74,7 @@ class Cli {
           choices: ['Zoo Keeper', 'Zoo Worker'],
         },
       ])
-      .then((res) => {
+      .then((res: { employeeChoice: string; }) => {
         if (res.employeeChoice === 'Zoo Keeper') {
           this.startZooKeeperCli();
         } else {
@@ -115,7 +115,7 @@ class Cli {
           message: 'Is their uniform clean?',
         },
       ])
-      .then((res) => {
+      .then((res: { name: string; id: number; title: string; salary: number; uniform: boolean; }) => {
         const newZooWorker = new ZooWorker(
           res.name,
           res.id,
@@ -146,8 +146,9 @@ class Cli {
           message: 'How much do you want to pay?',
         },
       ])
-      .then((res) => {
+      .then((res: any) => {
         // TODO: Update the method to iterate through the employees array and find the name of the employee to receive pay.
+
       });
   }
 }
